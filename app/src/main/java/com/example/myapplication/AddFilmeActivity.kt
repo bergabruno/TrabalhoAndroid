@@ -11,7 +11,6 @@ import com.example.myapplication.model.Filme
 
 class AddFilmeActivity : AppCompatActivity() {
 
-    private lateinit var listaFilmes:MutableList<Filme>
     private lateinit var etLancamento:EditText
     private lateinit var etGenero:EditText
     private lateinit var etAutor:EditText
@@ -31,15 +30,13 @@ class AddFilmeActivity : AppCompatActivity() {
         val btAdicionar:Button = findViewById(R.id.btAdicionarFilme)
         val btGetLista: Button = findViewById(R.id.btGetLista)
 
-        listaFilmes = mutableListOf()
         btAdicionar.setOnClickListener{
             cadastrarItem(etNome.text.toString(), etGenero.text.toString(), etAutor.text.toString(),
             etLancamento.text.toString(), etNota.text.toString())
-            var filme:Filme = listaFilmes.get(listaFilmes.size-1);
         }
 
         btGetLista.setOnClickListener{
-            val intent = Intent(this, AddFilmeActivity::class.java)
+            val intent = Intent(this, GetListaActivity::class.java)
             startActivity(intent)
         }
 
@@ -47,7 +44,7 @@ class AddFilmeActivity : AppCompatActivity() {
 
     fun cadastrarItem(nome: String, genero: String, autor: String, ano: String, nota: String) {
         if(validar(nome, genero, autor, ano, nota)){
-            listaFilmes.add(Filme(nome = nome, genero = genero, autor = autor, ano = ano, nota = nota))
+            RefLista.listaFilmes.add(Filme(nome = nome, genero = genero, autor = autor, ano = ano, nota = nota))
         }
     }
 
@@ -76,6 +73,7 @@ class AddFilmeActivity : AppCompatActivity() {
         etGenero.text.clear()
         etLancamento.text.clear()
         etNota.text.clear()
-        return true
+        tvCampo.text = "Filme Adicionado com sucesso!"
+        return true;
     }
 }
