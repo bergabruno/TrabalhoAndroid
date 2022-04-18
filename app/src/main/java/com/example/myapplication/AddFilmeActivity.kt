@@ -35,7 +35,6 @@ class AddFilmeActivity : AppCompatActivity() {
         btAdicionar.setOnClickListener{
             cadastrarItem(etNome.text.toString(), etGenero.text.toString(), etAutor.text.toString(),
             etLancamento.text.toString(), etNota.text.toString())
-            var filme:Filme = listaFilmes.get(listaFilmes.size-1);
         }
 
         btGetLista.setOnClickListener{
@@ -76,6 +75,7 @@ class AddFilmeActivity : AppCompatActivity() {
         etGenero.text.clear()
         etLancamento.text.clear()
         etNota.text.clear()
-        return true
+        tvCampo.text = "Filme Adicionado com sucesso!"
+        return true;
     }
 }
