@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="email_adress">Informe seu email</string>
+    <string name="password">Informe sua senha</string>
+    <string name="criar_conta">Ainda não tem uma conta? \nCrie aqui!</string>
+    <string name="login">Entrar</string>
+    <string name="nome_filme">Informe o nome</string>
+    <string name="genero_filme">Informe o genero</string>
+    <string name="autor_filme">Informe o Autor</string>
+    <string name="ano_filme">Ano de lancamento</string>
+    <string name="add">Adicionar</string>
+    <string name="nota_filme">Nota (0-10)</string>
+    <string name="ver_lista">Ver lista</string>
+    <string name="adicionar_filme">Adicionar Filme</string>
+
+</resources>
