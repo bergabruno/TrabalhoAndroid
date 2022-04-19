@@ -13,10 +13,12 @@
     <string name="ver_lista">Ver lista</string>
     <string name="adicionar_filme">Adicionar Filme</string>
     <string name="lista_de_filmes">Lista de filmes</string>
-    <string name="nome">Nome</string>
     <string name="genero">Genero</string>
     <string name="autor">Autor</string>
     <string name="ano">Ano</string>
     <string name="nota">Nota</string>
+    <string name="nome">Nome</string>
+    <string name="filme">Filme</string>
+    <string name="detalhes">Clique aqui para mais detalhes</string>
 
 </resources>

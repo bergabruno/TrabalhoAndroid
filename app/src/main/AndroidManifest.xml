@@ -10,9 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".VisualizarFilmeActivity"
+            android:exported="false"
+            android:parentActivityName=".GetListaActivity" />
+        />
+        <activity
             android:name=".GetListaActivity"
             android:exported="false"
-            android:parentActivityName=".AddFilmeActivity"/>
+            android:parentActivityName=".AddFilmeActivity" />
         <activity
             android:name=".AddFilmeActivity"
             android:exported="false"
